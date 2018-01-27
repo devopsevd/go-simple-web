@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	"github.com/devopsevd/go-simple-web/db"
-	"github.com/devopsevd/go-simple-web/model"
+
 
 )
 
@@ -16,7 +16,7 @@ type Config struct {
 	ListenSpec string
 
 	Db db.Config
-	UI ui.Config
+
 }
 
 func Run(cfg *Config) error {
@@ -28,15 +28,6 @@ func Run(cfg *Config) error {
 		return err
 	}
 
-	m := model.New(db)
-
-	l, err := net.Listen("tcp", cfg.ListenSpec)
-	if err != nil {
-		log.Printf("Error creating listener: %v\n", err)
-		return err
-	}
-
-	ui.Start(cfg.UI, m, l)
 
 	waitForSignal()
 

@@ -2,13 +2,13 @@ package daemon
 
 import (
 	"log"
-	"net"
+	//"net"
 	"os"
 	"os/signal"
 	"syscall"
 
 	"github.com/devopsevd/go-simple-web/db"
-	"github.com/devopsevd/go-simple-web/model"
+	//"github.com/devopsevd/go-simple-web/model"
 
 
 )

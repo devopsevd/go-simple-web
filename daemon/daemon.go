@@ -16,6 +16,7 @@ type Config struct {
 	ListenSpec string
 
 	Db db.Config
+	UI ui.Config
 
 }
 

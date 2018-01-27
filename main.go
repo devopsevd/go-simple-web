@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"log"
-	"net/http"
+	//"net/http"
 
 	"github.com/devopsevd/go-simple-web/daemon"
 )

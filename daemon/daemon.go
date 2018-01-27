@@ -8,6 +8,7 @@ import (
 	"syscall"
 
 	"github.com/devopsevd/go-simple-web/db"
+	"github.com/devopsevd/go-simple-web/model"
 
 
 )

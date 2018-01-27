@@ -11,7 +11,7 @@ Read Me:
 #docker build -t go_microservice .
 
 4) Run container
-#docker run -it --rm -p 3000:3000 --network=postgres_default go_microsvc
+#docker run -it --rm -p 3000:3000 --network=postgres_default go_microservice
 
 Using scratch :
 

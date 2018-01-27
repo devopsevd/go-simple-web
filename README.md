@@ -17,4 +17,4 @@ Using scratch :
 1) Build using scratch
 #docker build -t go_microsvc_scratch -f Dockerfile.scratch .
 2) Run container
-#docker run -it --rm -p 8080:8080 go_microsvc_scratch
+#docker run -it --rm -p 8080:8080 --network=postgres_default go_microsvc_scratch
